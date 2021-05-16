@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1><center>BlackJack</center></h1>
+    </div>
+    <hr>
+    <!-- result diaplay section -->
+    <div class="result">
+        <p id="result-display"></p>
+    </div>
+
+    <div class="container">
+        <div class="display">
+
+            <!-- board start -->
+            <div class="board">
+
+                <div class="play-board1">
+                    <p>You</p>
+                    
+                    <div id="user">
+                        <!-- images -->
+                       
+                    </div>
+
+                </div>
+
+                <div class="play-board2">
+                    <p>Dealer</p>
+
+                    <div id="opponent">
+                        <!-- images -->
+                    </div>
+                    
+                </div>   
+                
+            </div>
+
+            <!-- play buttons -->
+            
+            <div class="play-btn">
+                <button class="btn" id="hit" onclick="user_play()">Hit</button>
+                <button class="btn" id="stand" onclick="computer_play()">Stand</button>
+                <button class="btn" id="deal" onclick="reset()">Deal</button>
+            </div>                      
+            
+
+            <!-- end board -->
+
+            <div class="score">
+                <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Looses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <th id="wins">0</th>
+                        <th id="looses">0</th>
+                        <th id="draws">0</th>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="index.js"></script>
